@@ -14,6 +14,7 @@ import platform
 gruppe = {  'student1': 'John Tran', \
 			      'student2': 'Steffen Holte Bergersen', \
             'student3': 'Sidney Schistad Camara', \
+            'student4': 'Kim Lyngvær', \
 }
 
 #
