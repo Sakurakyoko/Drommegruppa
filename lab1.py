@@ -13,7 +13,7 @@ import platform
 # Skriv inn fullt navn på gruppemedlemene (erstatte '-' med navn slikt 'Kari Trå')
 gruppe = {  'student1': 'John Tran', \
 			      'student2': 'Steffen Holte Bergersen', \
-            'student3': '-', \
+            'student3': 'Sidney Schistad Camara', \
 }
 
 #
