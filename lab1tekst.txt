@@ -1,0 +1,22 @@
+Oppgave 1.
+American Standard Code for Information Interchange (ascii) 
+
+Oppgave 2.
+bitAnd gir en AND operatør på bits. En AND operatør legger sammen to bit verdier, hvis verdien er 
+den samme vil operatøren returnere 1, hvis de er forskjellige vil den returnere 0.
+
+Oppgave 3.
+BitXor tar to binære stringer av samme lengde og utfører
+en logisk XOR-operasjon på hver av motsvarende biter. Resultatet blir 1 om den ene 
+biten er 1 og den andre er 0, men 0 hvis begge bitene er like.
+
+Oppgave 4.
+bitOR tar to binære stringer av samme lengde og utfører
+en logisk OR-operasjon på hver av motsvarende biter. Resultatet blir 1 hvis den
+ene innholder 1, men 0 hvis begge er 0.
+
+Oppgave 5.
+American Standard Code for Information Interchange (ascii) er et tegnsett,
+det vil si en standard utveksling av tekst mellom  datamaskiner. ASCII benytter seg av 
+7 bit til koder, noe som tillater koding av 128 mulig verdier. 95 av disse er tilordnet store 
+og små bokstaver i det engelske alfabetet (A-Z), tall 0-9 og en del andre vanlig forekommende tegn.
