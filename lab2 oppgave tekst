@@ -1,0 +1,42 @@
+IS-105 Operativsystemer og Datakommunikasjon, Universitetet i Agder
+Våren 2015: Romerske tall
+Side 1 av 2
+PUBLISERT: 26.01.2015
+FRIST: Tirsdag 3. februar 2015. Fristen er for å få en tilbakemelding og for å hjelpe
+dere til å strukturere arbeid. Den endelige innleveringen for mappeevaluering er i
+slutten av mai 2015.
+LAB2
+Oppgave
+Designe en module i Python som kan overføre fra det desimale til det romerske
+tallsystemet og omvendt.
+Implementere addisjon av to romerske tall (uten å bruke overgangen til
+desimaltall).
+For å få ekstra poeng, implementer også subtraksjon og multiplikasjon.
+Innlevering skal inneholde en module is105roman.py og en egen fil hvor man
+demonstrerer hvordan funksjoner i modulen fungerer (testing). I tillegg levere dere
+en tekst-fil hvor dere svarer på følgende:
+(1) Hva er grunnleggende forskjeller på det desimale og det romerske
+tallsystemet? (forklar fra designperspektivet)
+(2) Hva er grunnleggende systeminformasjon for systemet som testene er blitt
+utført på (operativssystemet, distribusjon, informasjon om CPU type)? Se
+under for forslag hvordan man finner slik informasjon.
+Ressurser:
+“Roman Arithmetics” by © Lawrence E. Turner, 2007,
+http://turner.faculty.swau.edu/mathematics/materialslibrary/roman/
+“Roman Numerals”, Wikipedia.org, http://en.wikipedia.org/wiki/Roman_numerals
+“Earliest uses of symbols for fractions”, http://jeff560.tripod.com/fractions.html
+Informasjon om OS, Python miljø osv.
+cat /etc/system-release
+cat /proc/version
+cat /etc/lib-release
+uname -a
+uname -mrs
+cat /proc/cpuinfo | grep “model name”
+IS-105 Operativsystemer og Datakommunikasjon, Universitetet i Agder
+Våren 2015: Romerske tall
+I Python-koden
+import sys
+...
+print sys.path
+SLUTT:
+Side 2 av 2
