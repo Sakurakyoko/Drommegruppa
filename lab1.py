@@ -1,4 +1,5 @@
-# -*- coding: UTF-8 -*-
+# -*- coding: latin-1 -*-
+# -*- coding: utf-8 -*-
 
 #
 #  IS-105 LAB1
@@ -8,14 +9,11 @@
 #
 #
 import sys
-import platform
-import psutil
 
 # Skriv inn fullt navn på gruppemedlemene (erstatte '-' med navn slikt 'Kari Trå')
-gruppe = {  'student1': 'John Tran', \
-			      'student2': 'Steffen Holte Bergersen', \
-            'student3': 'Sidney Schistad Camara', \
-            'student4': 'Kim Lyngvær', \
+gruppe = {  'student1': 'Kim Eikebø Lyngvær', \
+			'student2': '-', \
+            'student3': '-', \
 }
 
 #
@@ -32,15 +30,14 @@ gruppe = {  'student1': 'John Tran', \
 #    (./
 #     '` 
 def ascii_bird():
-	pass
-print """
-       \/_
+    print """       \/_
   \,   /( ,/
    \\\' ///
     \_ /_/
     (./
-     '` 
-"""
+     '`"""
+ascii_bird()
+	
 
 # 
 #  Oppgave 2
@@ -53,8 +50,6 @@ print """
 #					den mest signifikante bit-en er lengst til venstre
 def bitAnd(x, y):
 	return x&y
-	print (x&y)
-print "oppgave 2"
 print bitAnd(6,5)
 
 
@@ -65,8 +60,6 @@ print bitAnd(6,5)
 #
 def bitXor(x, y):
 	return x^y
-	print(x^y)
-print "Oppgave 3"
 print bitXor(4,5)
 
 #
@@ -76,10 +69,7 @@ print bitXor(4,5)
 #
 def bitOr(x, y):
 	return x|y
-	print (x|y)
-print "Oppgave 4"
 print bitOr(0,1)
-
 
 #
 #  Oppgave 5
@@ -102,12 +92,12 @@ print bitOr(0,1)
 #	 Forklar resultatet ascii8Bin('å')
 #	 Hvilke faktorer påvirker resultatet? Forklar.
 #
-print "Oppgave 5"
 def ascii8Bin(letter):
-	bokstav = ord(letter)
-	bokstavvalg = "{0:08b}".format(bokstav)
-	print (bokstavvalg)
-ascii8Bin("a")
+    A = ord(letter)
+    toA = "{0:08b}".format(A)
+    return toA
+print ascii8Bin("a")
+
 
 # 
 #  Oppgave 6
@@ -119,16 +109,14 @@ ascii8Bin("a")
 #	 Forklart hver linje i denne funksjonen (hva er list, hva gjør in)
 #	 Skriv selv inn tester ved å bruke assert i funksjonen test()
 #
-print "Oppgave 6"
 def transferBin(string): 
 	l = list(string)
 	for c in l:
-
-		ascii8Bin(c)
-
-transferBin("Heisann sveisann")
 		# skriv ut den binære representasjon av hvert tegn (bruk ascii8Bin funksjonen din)
-		
+		print ascii8Bin(c)
+		print "Den binære representasjonen for %s" % c
+
+print transferBin("hei")
 
 #
 #  Oppgave 7
@@ -138,34 +126,29 @@ transferBin("Heisann sveisann")
 #					med 2 heksadesimale tegn
 #    Skriv selv inn tester ved å bruke assert i funksjonen test()
 #  
-print "Oppgave 7"
-def ascii8Bin1(A):
-	bokstav = ord(A)
-	bokstavvalg = "{0:08x}".format(bokstav)
-	return bokstavvalg
-ascii8Bin1("A")
 
 def transferHex(string):
 	l = list(string)
 	for c in l:
-		print ascii8Bin1(c)
+	    print c.encode("hex")
+	    print "Den heksadesimale representasjonen for %s" % c
 
-transferHex("Heisann")
+transferHex("hei")
 
 #
 # Oppgave 8
 # 		Implementer en funksjon unicodeBin, som kan behandle norske bokstaver
 # 		Kravspesifikasjon for denne funksjonen er den samme som for ascii8Bin funksjonen
-
-print "Oppgave 8"
-
-def unicodeBin(letter): 
-	l = list(letter)
-	for c in l:
-
-		ascii8Bin(c)
+def unicodeBin(string):
+    l = list(string)
+    for c in l:
+		# skriv ut den binære representasjon av hvert tegn (bruk ascii8Bin funksjonen din)
+		print ascii8Bin(c)
+		print "Den binære representasjonen for %s" % c
 
 print unicodeBin("å")
+	
+
 #
 # Oppgave 9
 # 	Studer python module psutils (må være obs på versjon)
@@ -184,24 +167,37 @@ print unicodeBin("å")
 #	Kan dere skrive en test for denne funksjonen?
 #	Hvilke andre muligheter har man for å finne informasjon om maskinvare i GNU/Linux?
 #
-print "Oppgave 9"
-def printSysInfo():
-    # Skriver ut merke og model
-    print "Node:", platform.node()
-    # Skriver ut hard disk plass info
-    print "Hard drive capacity:", psutil.disk_usage("/")
-    # Skriver ut ram minne
-    print "Amount of RAM:", psutil.virtual_memory()
-    # Skriver ut CPU model og hastighet
-    print "Processor:", platform.processor()
-    # Skriver ut skjerm størrelse
-    # Skriver ut OS og distribusjons navn
-    print "System:", platform.system(), platform.linux_distribution()
+import psutil
+import platform
+import subprocess
 
+def printSysInfo():
+    print " "
+    print "PSUtil information:"
+    print "Memory: " 
+    print psutil.virtual_memory()
+    print "PSutil disk usage: " 
+    print psutil.disk_usage('/')
     
+    print " "
+    print "Platform information:"
+    print "Machine: "
+    print platform.machine()
+    print "Node: "
+    print platform.node()
+    print "Platform: "
+    print platform.platform()
+    print "Processor: "
+    print platform.processor()
+    
+    print " "
+    print "Screen resolution: "
+    print "Get's an xrandr failure."
+    output = subprocess.Popen('xrandr | grep "\*" | cut -d" " -f4',shell=True, stdout=subprocess.PIPE).communicate()[0]
+    print output
+    
+
 print printSysInfo()
-    
-	
 
 def test():
 	assert bitAnd(6, 5) == 4
@@ -217,5 +213,5 @@ def test():
 
 
 # Bruk denne funksjonen for å vise at alle testene er kjørt feilfritt
-#print test()
+# print test()
 		
