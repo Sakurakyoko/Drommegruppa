@@ -9,6 +9,7 @@
 #
 import sys
 import platform
+import psutil
 
 # Skriv inn fullt navn på gruppemedlemene (erstatte '-' med navn slikt 'Kari Trå')
 gruppe = {  'student1': 'John Tran', \
@@ -185,6 +186,21 @@ print unicodeBin("å")
 #
 print "Oppgave 9"
 def printSysInfo():
+    # Skriver ut merke og model
+    print "Node:", platform.node()
+    # Skriver ut hard disk plass info
+    print "Hard drive capacity:", psutil.disk_usage("/")
+    # Skriver ut ram minne
+    print "Amount of RAM:", psutil.virtual_memory()
+    # Skriver ut CPU model og hastighet
+    print "Processor:", platform.processor()
+    # Skriver ut skjerm størrelse
+    # Skriver ut OS og distribusjons navn
+    print "System:", platform.system(), platform.linux_distribution()
+
+    
+print printSysInfo()
+    
 	
 
 def test():
