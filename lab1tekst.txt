@@ -20,3 +20,15 @@ American Standard Code for Information Interchange (ascii) er et tegnsett,
 det vil si en standard utveksling av tekst mellom  datamaskiner. ASCII benytter seg av 
 7 bit til koder, noe som tillater koding av 128 mulig verdier. 95 av disse er tilordnet store 
 og små bokstaver i det engelske alfabetet (A-Z), tall 0-9 og en del andre vanlig forekommende tegn.
+
+
+2.
+
+Operatørprioritet er hvilke operasjoner som skal gjennomføres først.
+Som for eksempel at if og else setning vil bli lest før + og -.
+
+
+One's compliment er en måte å skrive negative binære tall på, ved å snu tallene på hodet. Hvor tallet 2 i 8-bit er 0000 0010, blir 1111 1101 som er -2.
+
+
+Pass er en måte å fortelle python at den skal ignorere det statementet, dette kan ofte brukes som placeholdertekst.
