@@ -15,6 +15,7 @@ gruppe = {  'student1': 'Kim Eikebø Lyngvær', \
 			'student2': 'Sidney Schistad Camara', \
             'student3': 'John Tran', \
             'student4': 'Geir Håkon Svendsen',\
+            'student5': 'Andreas Wachendorf Lømsland', \
 }
 
 #
