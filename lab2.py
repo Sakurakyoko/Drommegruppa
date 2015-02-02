@@ -1,4 +1,4 @@
-
+limit_sum = 4999
 
 def int_to_roman (integer):
 
@@ -47,3 +47,15 @@ def rom_or_int():
         print "Error: Choose 1 or 2"
 
 rom_or_int()
+
+def add_roman(x, y):
+    table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
+    rom_sum = rom_to_int(x) + rom_to_int(y)
+    
+    if rom_sum <= limit_sum:
+    
+        int_to_roman(rom_sum)
+        print ("Roman sum: %s + %s = %s" % (x, y, int_to_roman(rom_sum)))
+        
+
+print add_roman("VI","X")
