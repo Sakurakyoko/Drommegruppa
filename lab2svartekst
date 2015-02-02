@@ -5,3 +5,50 @@ tallsystemet? (forklar fra designperspektivet)
 
 Oppgave 2. Hva er grunnleggende systeminformasjon for systemet som testene er blitt 
 utført på (operativssystemet, distribusjon, informasjon om CPU type)?
+
+cat /etc/*-release
+
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=14.04
+DISTRIB_CODENAME=trusty
+DISTRIB_DESCRIPTION="Ubuntu 14.04.1 LTS"
+NAME="Ubuntu"
+VERSION="14.04.1 LTS, Trusty Tahr"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 14.04.1 LTS"
+VERSION_ID="14.04"
+HOME_URL="http://www.ubuntu.com/"
+SUPPORT_URL="http://help.ubuntu.com/"
+BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+
+
+
+cat /proc/version
+
+Linux version 3.13.0-44-generic (buildd@lamiak) (gcc version 4.8.2 (Ubuntu 4.8.2-19ubuntu1) ) #73-Ubuntu SMP Tue Dec 16 00:22:43 UTC 2014
+
+
+
+uname -a
+
+Linux Noldus 3.13.0-44-generic #73-Ubuntu SMP Tue Dec 16 00:22:43 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+
+
+
+uname -mrs
+
+Linux 3.13.0-44-generic x86_64
+
+
+
+cat /proc/cpuinfo | grep "model name"
+
+model name	: AMD A8-6410 APU with AMD Radeon R5 Graphics
+model name	: AMD A8-6410 APU with AMD Radeon R5 Graphics    
+model name	: AMD A8-6410 APU with AMD Radeon R5 Graphics    
+model name	: AMD A8-6410 APU with AMD Radeon R5 Graphics
+
+cat /proc/meminfo |grep MemTotal
+
+MemTotal:        7078828 kB
