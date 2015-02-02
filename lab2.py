@@ -47,7 +47,7 @@ def rom_or_int():
         print "Error: Choose 1 or 2"
 
 rom_or_int()
-
+# Addition of roman numerals
 def add_roman(x, y):
     table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
     rom_sum = rom_to_int(x) + rom_to_int(y)
@@ -60,6 +60,7 @@ def add_roman(x, y):
 
 print add_roman("VI","X")
 
+# Subtraction of roman numerals
 def subtract_roman(x, y):
     table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
     rom_sum = rom_to_int(x) - rom_to_int(y)
@@ -72,6 +73,7 @@ def subtract_roman(x, y):
 
 print subtract_roman("V","IV")
 
+# Multiplication of roman numerals
 def multiply_roman(x, y):
     table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
     rom_sum = rom_to_int(x) * rom_to_int(y)
