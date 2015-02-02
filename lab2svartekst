@@ -1,6 +1,29 @@
 Oppgave 1. Hva er grunnleggende forskjeller på det desimale og det romerske
 tallsystemet? (forklar fra designperspektivet)
+Det finnes en rekke ulike tallsystemer som er og har vært i bruk. 
+De mest kjente er romertallene og desimaltallene som er i bruk idag. 
+Det finnes også endel andre tallsystemer som brukes i andre sammenhenger, 
+men det skal vi ikke gå noe nærmere innpå idag. 
 
+Det romerske tallsystemet er satt sammen av symboler.
+Når man legger sammen to romerske tall slås disse verdiene sammen. f.eks. X+X=XX.
+Romerske tallsystemet fungerer slik at man sorterer etter høyeste verdi. 
+f.eks XVII+MDCL= XVIIMDCL, som nevnt så må dette sorteres etter høyeste verdi som vil se slik ut: MDCLXVII
+
+Videre så er det også en annen regel som sier at man kan erstatte symboler av lavere verdier med høyere verdier. 
+f.eks VV = X, det vil si at VV har samme verdien som X.
+
+En annen ting med romersk tallsystem er at vis man har en lav romersk tall foran en høy romersk tall, 
+betyr det at man trekker fra den verdien foran.f.eks. IV=4(V-I), IX=9(X-I).
+
+Romerske tallsystemet er komplisert hvor flere høye verdier kan skrives på flere 
+forskjellige måter som for eksempel 100 kan skrives XXXXXXXXXX, LL, C.
+I titallssytemet/desimaltall så har man en 0 hvor man kan legge til som gjør verdien enten 
+høyere eller lavere, samt at man kan flytte komma slik at verdien kan justeres etter lav og høy. 
+I titallssystemet har plassering av tall noe å si iforhold til romersk tallsystem hvor XV og VX er det samme. 
+Titallssystemet har ikke verdier som kan skrives på flere måter som romersk tallsystem.
+
+Titallssystemet er lettere å lese verdien siden systemet er plassbasert.
 
 
 Oppgave 2. Hva er grunnleggende systeminformasjon for systemet som testene er blitt 
