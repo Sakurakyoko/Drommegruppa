@@ -68,7 +68,7 @@ def subtract_roman(x, y):
     if rom_sum <= limit_sum:
     
         int_to_roman(rom_sum)
-        print ("Roman sum: %s + %s = %s" % (x, y, int_to_roman(rom_sum)))
+        print ("Roman sum: %s - %s = %s" % (x, y, int_to_roman(rom_sum)))
         
 
 print subtract_roman("V","IV")
@@ -81,7 +81,7 @@ def multiply_roman(x, y):
     if rom_sum <= limit_sum:
     
         int_to_roman(rom_sum)
-        print ("Roman sum: %s + %s = %s" % (x, y, int_to_roman(rom_sum)))
+        print ("Roman sum: %s * %s = %s" % (x, y, int_to_roman(rom_sum)))
         
 
 print multiply_roman("X","X")
