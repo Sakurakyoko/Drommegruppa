@@ -1,0 +1,11 @@
+Oppgave 3:
+
+Det vi ser når vi har den binære representasjonen av det vi skriver lowercase, og uppercase er følgende:
+Lowercase "a" blir: 01100001 
+Uppercase "A" blir: 01000001 
+
+Da ser vi veldig klart at den som står som nr.3 fra venstre går fra 1 til 0 ihvert tilfelle av bytte fra lowercase til uppercase.
+Prøver vi dette med et litt lengre ord, blir resultatet det samme.
+
+Lowercase "hei" blir : 01101000 01100101 01101001   
+Uppercase "HEI" blir : 01001000 01000101 01001001  
