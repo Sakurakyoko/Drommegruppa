@@ -14,34 +14,34 @@ def allmax(iterable, key=lambda x:x):
     maxi = max(iterable, key=key)
     return [element for element in iterable if key(element) == key(maxi)]
 
-# hand_rank function takes a hand and returns the hands rank.
+# hand_rank funksjonen tar en hånd og returnerer en hånd med kort.
 def hand_rank(hand):
     ranks = card_ranks(hand)
-    # Check if hand has five cards of the same suit in sequence, straight flush.
+    # Sjekk om hånden har straight flush.
     if straight(ranks) and flush(hand):
        return (8, max(ranks))
-    # Check if hand has four cards of the same rank, four of a kind.
+    # Sjekk on hånden har fire like.
     elif kind(4, ranks):
        return (7, kind(4, ranks), kind(1, ranks))
-    # Check if hand has two and three cards of the same rank, full house.
+    # Sjekk om hånden har fullt hus.
     elif kind(3, ranks) and kind(2, ranks):
         return (6, kind(3, ranks), kind(2, ranks))
-    # Check if hand includes five cards of the same suit, flush.
+    # Sjekk om hånden har flush.
     elif flush(hand):
         return (5, ranks)
-    # Check if card ranks in hand are in sequence, straight.
+    # Sjekk om hånden har en straight.
     elif straight(ranks):
         return (4, max(ranks))
-    # Check if hand has three cards of the same rank, three of a kind.
+    # Sjekk om hånden har tre like.
     elif kind(3, ranks):
         return (3, kinds(3, ranks), ranks)
-    # Check if hand has two pairs of cards of the same rank, two pair.
+    # Sjekk om hånden har to par.
     elif two_pair(ranks):
         return (2, two_pair(ranks), ranks)
-    # Check if hand has two cards of the same rank, two of a kind.
+    # Sjekk om hånden har to like.
     elif kind(2, ranks):
         return (1, kind(2, ranks), ranks)
-    # Check of highest card rank.
+    # Sjekk om hånden har den høyeste kortet.
     else:
         return (0, ranks)
 
