@@ -50,11 +50,10 @@ def group(items):
     groups = [(items.count(x), x) for x in set(items)]
     return sorted(groups, reverse = True)
 
-# card_ranks function takes a hand and returns the rank of each card in that hand.
+# card_ranks funksjonen tar en hånd og returnerer hvilken rangering hvert kort i hånden.
 def card_ranks(hand):
     ranks = ['--23456789TJQKA'.index(r) for r,s in hand]
-    # To accuratly check for straight, we need to account for a hand that goes
-    # from ace to five.
+    # For at man skal få alle mulige straight så må vi sørge for at ESS har to verdier 14 og 1.
     if ranks == [14,5,4,3,2]:
         return [5,4,3,2,1]
     return ranks
