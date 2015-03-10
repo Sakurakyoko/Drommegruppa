@@ -92,7 +92,7 @@ def deal(numhands, n = 5, deck = [r+s for r in '23456789TJQKA' for s in 'SHDC'])
     return [[next(deck) for card in range(n)] for hand in range(numhands)]
 
 def test():
-    "Test cases for the functions in poker program"
+    "Tester funksjonene i poker programmet"
     sf = "6C 7C 8C 9C TC".split() # Straight Flush
     fk = "9D 9H 9S 9C 7D".split() # Four of a Kind
     fh = "TD TC TH 7C 7D".split() # Full House
@@ -122,7 +122,7 @@ def test():
     assert card_ranks(fh) == [10, 10, 10, 7, 7]
     assert card_ranks(['AC', '3D', '4S', 'KH']) == [14, 13, 4, 3]
 
-    # Ace-high beats 7-high
+    # Ace-high slår 7-high
     assert (card_ranks(['AS', '2C', '3D', '4H', '6S']) >
             card_ranks(['2D', '3S', '4C', '6H', '7D']))
     # Straight fra 1-5 er dårligere enn straight 2-6
@@ -148,7 +148,7 @@ def test():
 
     return 'tests pass'
     print "Test"
-
+#Navn på alle mulige vinner hånd
 hand_names = [
     'High Card',
     'Pair',
