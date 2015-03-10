@@ -2,3 +2,8 @@ C)
   cpp test1.c > test1.i
   gcc -S hello.i
   as -o hello.o hello.s
+
+for å kunne lage filer med forskjellig .s .o .l endelser. Kan man compile
+  gcc -o test1(.s)(.o)(.l) test1.c
+hvor man velger enten .s .o .l Da lagrer det seg en fil med endelsen man velger.
+
