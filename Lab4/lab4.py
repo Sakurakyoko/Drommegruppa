@@ -102,6 +102,7 @@ def test():
     tp = "5S 5D 9H 9C 6S".split() # two pair
     ah = "AS 2S 3S 4S 6C".split() # A high
     sh = "2S 3S 4S 6C 7D".split() # 7 high
+    #Tester riktig vinner
     assert poker([sf, fk, fh]) == [sf]
     assert poker([fk, fh]) == [fk]
     assert poker([fh, fh]) == [fh, fh]
@@ -124,7 +125,7 @@ def test():
     # Ace-high beats 7-high
     assert (card_ranks(['AS', '2C', '3D', '4H', '6S']) >
             card_ranks(['2D', '3S', '4C', '6H', '7D']))
-    # 5-straight loses to 6-straight
+    # Straight fra 1-5 er dårligere enn straight 2-6
     assert (card_ranks(['AS', '2C', '3D', '4H', '5S']) <
             card_ranks(['2D', '3S', '4C', '5H', '6D']))
 
