@@ -1,0 +1,4 @@
+C) 
+  cpp test1.c > test1.i
+  gcc -S hello.i
+  as -o hello.o hello.s
