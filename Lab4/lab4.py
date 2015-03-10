@@ -96,6 +96,7 @@ def test():
     sf = "6C 7C 8C 9C TC".split() # Straight Flush
     fk = "9D 9H 9S 9C 7D".split() # Four of a Kind
     fh = "TD TC TH 7C 7D".split() # Full House
+    fl = "4D TD 8D QD 5D".split() # Flush
     s1 = "AS 2S 3S 4S 5C".split() # A-5 straight
     s2 = "2C 3C 4C 5S 6S".split() # 2-6 straight
     s3 = "TC JC QC KS AS".split() # 10-A straight    
