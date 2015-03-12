@@ -1,0 +1,13 @@
+# 2. Åpne en Python shell for eksperimentering
+# a. Åpne filen for å lese den bit for bit (eller byte for byte)
+# b. Python har en module struct, som kan lese binære filer bit for bit; import struct ( se https://docs.python.org/2/library/struct.html )
+# c. f = open(“test1”, ‘rb’) ( se https://docs.python.org/2/library )
+# d. OPPGAVE: finn ut hva betyr ‘rb’
+
+D) "Finn ut hva 'rb' betyr"
+
+'rb' er en forkortelse for to ord.
+r = reading
+b = binary
+
+'rb' står da for "reading binary", og hvis det oversettes til norsk blir det "å lese binært"
