@@ -1,0 +1,36 @@
+Alle spørsmål skal besvares. Dere leverer i samme grupper som tidligere.
+Lab-besvarelsen skal inneholde en tittelside med studentenes navn, kursnavn, lab ID, dato og
+versjon. Oppgavene skal leveres i fronter!
+
+Formål
+I denne innleveringen skal studentene bruke et program som heter Wireshark. Det er en
+nettverks-"sniffer". Målet med laben er å få et innblikk i hvordan nettverksprotokoller
+fungerer i praksis. Først skal studentene undersøke enkelte parametre fra forskjellige
+nettverksprotokoller (oppgave 1), så skal de se på hvordan nettleseren har implementert HTTP
+(Hypertext Transfer Protocol) (oppgave 2) og til slutt skal de se på et tilfelle hvor HTTP
+brukes sammen med en type autentisering (oppgave 3).
+
+Hvor skal man søke etter informasjon?
+
+For mer detaljert informasjon om Wireshark kan du besøke prosjektets hjemmeside
+http://www.wireshark.org
+
+Det anbefales også at dere leser gjennom Wikipedia-artikkelen om Wireshark;
+http://en.wikipedia.org/wiki/Wireshark.
+
+Hvis dere lurer på noe mens dere jobber med denne laben, prøv først å finne det ut selv ved å
+se, blant annet, i "Documentation" på hjemmesidene til Wireshark.
+Når det gjelder prinsippene bak HTTP-protokollen, så bruk gjerne boken (Kurose & Ross),
+eller finn informasjon om HTTP på world wide web.
+
+Installasjon av Wireshark
+
+Wireshark kan lastes ned fra http://www.wireshark.org/download.html - Her finner dere
+installasjonspakker for alle plattformer.
+
+Å starte en "capture" (det norske begrepet "fangst" er også forholdsvis beskrivende) betyr å
+starte en ny prosess (et dataprogram) som fanger opp alle meldingene som går gjennom det
+spesifiserte nettverksgrensesnittet (for eksempel et ethernet-kort) på den aktuelle
+datamaskinen. Den beste måten å starte en capture på er å gå på: Capture -> Interfaces. Der
+ser du alle nettverksenhetene på maskinen. Trykk start på den enheten som du vil fange opp
+trafikk i fra. Det er som regel det eneste kortet som har trafikk når du sjekker.
