@@ -1,0 +1,20 @@
+Vi sjekket med å bruke $ ps -aef | grep python
+
+Da fikk vi en liste over python prosseser. Vi tok en av disse, fant koden og skrev inn i:
+ls -l /proc/2892/fd
+
+Du ba oss om å bruke pfile, dette er utdatert! Funket i alle fall ikke.
+
+Da fikk vi opp 
+lrwx------ 1 aegis aegis 64 mars  12 11:49 0 -> /dev/pts/23
+lrwx------ 1 aegis aegis 64 mars  12 11:49 1 -> /dev/pts/23
+lrwx------ 1 aegis aegis 64 mars  12 11:44 2 -> /dev/pts/23
+lr-x------ 1 aegis aegis 64 mars  12 11:49 3 -> /home/aegis/ctest/lab5/hello.exe
+
+De tre første linjene bestemmer Input, output, error linjer. mens den siste viser til filen som er åpnet av prosessen.
+Vi har bare åpnet den med read egenskaper, derfor mangler det en "w" i lr-x.
+
+Oppgave 9.
+
+Det hadde med Standard-Input, standard-output og standard-error. 
+Dette bestemmer hvor vi får informasjonen fra, hvor vi skriver den, og hvor feilmeldinger dukker opp hen.
