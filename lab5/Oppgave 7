@@ -1,0 +1,21 @@
+2
+0
+0
+0
+['0', '0', '0', '0', '0', '0', '1', '0']
+00000010
+0x2
+
+1
+0
+0
+0
+['0', '0', '0', '0', '0', '0', '0', '1']
+00000001
+0x1
+
+Her har vi resultatet av den femte og sjette gangen vi kjørte igjennom opplegget.
+
+A) Da begynner selve programmet. Mest sansynlig import delen, siden den står først.
+
+B) 
