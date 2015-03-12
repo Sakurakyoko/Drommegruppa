@@ -257,4 +257,13 @@ def test_shufflers(shufflers=[shuffle, shuffle1], decks=['abc','ab']):
 
 def factorial(n): return 1 if (n <= 1) else n*factorial(n-1)
 
-print poker(deal(3))
+#Måling av tid.
+#Hvor lang tid det tar å utføre funksjonen i forhold til Udacity sitt funksjon.
+#if __name__ == '__main__':
+#	import timeit
+#	print(timeit.timeit("straight([9, 8, 7, 6, 5])", setup="from __main__ import straight"))
+#	print(timeit.timeit("straight_udacity([9, 8, 7, 6, 5])", setup="from __main__ import straight_udacity"))
+#	print(timeit.timeit("flush('6C 7C 8C 9C TC'.split())", setup="from __main__ import flush"))
+#	print(timeit.timeit("flush_udactiy('6C 7C 8C 9C TC'.split())", setup="from __main__ import flush_udactiy"))
+
+print poker(deal(4))
