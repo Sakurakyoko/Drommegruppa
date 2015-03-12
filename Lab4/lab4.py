@@ -4,6 +4,9 @@ import math
 import itertools
 from collections import defaultdict
 
+#Vi har brukt mye av udacity poker, samt at vi har prøvd å vri om det vi kan vri om til vårt eget.
+#
+
 def poker(hands):
     "Return a list of winning hands: poker([hand,...]) => [hand,...]"
     print hands
@@ -60,11 +63,11 @@ def card_ranks(hand):
     return ranks
 
 def straight(ranks):
-    "Return True if the ordered ranks form a 5-card straight."
+    "Returner sant hvis hånden har en straight."
     return sum(ranks) - min(ranks)*5 == 10
 
 def flush(hand):
-    "Return True if all the cards have the same suit."
+    "Returner sant hvis alle korta på hånden er av samme sort."
     suits = [s for r, s in hand]
     return len(set(suits)) == 1
 
