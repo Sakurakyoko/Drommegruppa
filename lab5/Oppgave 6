@@ -1,0 +1,35 @@
+127
+0
+0
+0
+['0', '1', '1', '1', '1', '1', '1', '1']
+01111111
+0x7f
+
+69
+0
+0
+0
+['0', '1', '0', '0', '0', '1', '0', '1']
+01000101
+0x45
+
+76
+0
+0
+0
+['0', '1', '0', '0', '1', '1', '0', '0']
+01001100
+0x4c
+
+70
+0
+0
+0
+['0', '1', '0', '0', '0', '1', '1', '0']
+01000110
+0x46
+
+Her har vi kjørt igjennom 4 ganger. Hexadesimale representasjonen stemmer overens med signaturen til "ELF"
+
+Begrepet her snakker vi om magic number, det er dette som identifiserer hvilken type fil det er vi jobber med.
