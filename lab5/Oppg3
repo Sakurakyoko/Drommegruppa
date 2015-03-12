@@ -12,3 +12,8 @@ B) "Finn ut hva f.read(1) gjør"
 
 Man kaller f.read() for å lese en fil sitt innhold, og returnere det som en string. (1) er et valg der du kan velge hva den
 skal lese. 
+
+C) Unpack gir oss tuple(liste) til den først "tingen" i dette tilfellet er det det første sekvensen i magic number.
+ 
+D) Det første nummeret vi får her er 127, som kan overføres til hexadesimal som blir da 7F. Som igjen er den første
+identifikatoren til en ELF for fil-typen.
