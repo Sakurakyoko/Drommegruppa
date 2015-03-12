@@ -1,0 +1,68 @@
+import struct
+f=open("jpeg.jpg",'rb')
+bin=struct.unpack('B',f.read(1))[0]
+print bin
+print bin >> 7
+print str(bin >> 7 & 1)
+print bin >> 8
+print [str(bin >> x & 1) for x in (7,6,5,4,3,2,1,0)]
+print ''.join([str(bin >> x & 1) for x in (7,6,5,4,3,2,1,0)])
+print hex(bin)
+###1
+
+aegis@aegis-VirtualBox:~/ctest/lab5$ python hello.py
+255
+1
+1
+0
+['1', '1', '1', '1', '1', '1', '1', '1']
+11111111
+0xff
+
+216
+1
+1
+0
+['1', '1', '0', '1', '1', '0', '0', '0']
+11011000
+0xd8
+
+255
+1
+1
+0
+['1', '1', '1', '1', '1', '1', '1', '1']
+11111111
+0xff
+
+224
+1
+1
+0
+['1', '1', '1', '0', '0', '0', '0', '0']
+11100000
+0xe0
+0
+0
+0
+0
+['0', '0', '0', '0', '0', '0', '0', '0']
+00000000
+0x0
+16
+0
+0
+0
+['0', '0', '0', '1', '0', '0', '0', '0']
+00010000
+0x10
+
+Det skjer det samme som tidligere, bare verdier som blir identifisert i begynnelsen av filen,
+viser da til at dette er en jpg fil.
+
+Identifikatoren til en jpg fil: FF D8 DD E0
+Dette finner vi igjen i koden på de fire første.
+
+A) Vi må først identifisere fil typen, ellers så vet vi ikke.
+
+B) Hakke'peiling.
