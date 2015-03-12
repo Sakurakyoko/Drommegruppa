@@ -1,0 +1,15 @@
+Mens python var åpen lukket vi den med
+f.close() i python shellet.
+
+Da var det igjen:
+aegis@aegis-VirtualBox:~$ ps aux | grep python
+aegis     2892  0.0  0.4  36440  4484 pts/23   S+   11:40   0:00 python
+aegis     3224  0.0  0.0  17160   948 pts/9    S+   12:22   0:00 grep --color=auto python
+aegis@aegis-VirtualBox:~$ sudo ls -l /proc/2892/fd
+total 0
+lrwx------ 1 aegis aegis 64 mars  12 11:49 0 -> /dev/pts/23
+lrwx------ 1 aegis aegis 64 mars  12 11:49 1 -> /dev/pts/23
+lrwx------ 1 aegis aegis 64 mars  12 11:44 2 -> /dev/pts/23
+
+Dette viser at filen er lukket, men standard File descriptor er igjen.
+
