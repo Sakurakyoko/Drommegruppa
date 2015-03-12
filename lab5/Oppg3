@@ -1,0 +1,14 @@
+# 3. Prøv denne setningen bin = struct.unpack(‘B’, f.read(1))[0]
+# a. OPPGAVE: finn ut hva ‘B’ betyr
+# b. OPPGAVE: finn ut hva f.read(1) gjør
+# c. OPPGAVE: finn ut hva unpack funksjonen returnerer som resultat
+# d. OPPGAVE: finn ut hvilken verdi bin har forutsatt at filen som du analysere er en binær “ELF 32-bit LSB executable”
+
+A) "Finn ut hva 'B' betyr"
+
+'B' betyr "unsigned char" og er en integer
+
+B) "Finn ut hva f.read(1) gjør"
+
+Man kaller f.read() for å lese en fil sitt innhold, og returnere det som en string. (1) er et valg der du kan velge hva den
+skal lese. 
