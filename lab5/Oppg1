@@ -1,3 +1,9 @@
+# 1. OPPGAVE: lag et enkelt program i C og kompiler det med gcc
+# a. OPPGAVE: i en teksbehandler skriv main() og lagre som test1.c
+# b. OPPGAVE: kompiler programmet med gcc ( se https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html#zz-1.4 )
+# c. OPPGAVE: forklar hvordan man kan produsere test1.i, test1.s og test1.o og hva disse filene illustrerer
+
+
 C) 
   cpp test1.c > test1.i
   gcc -S hello.i
