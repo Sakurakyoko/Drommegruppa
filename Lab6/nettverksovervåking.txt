@@ -63,7 +63,11 @@ ikke feltet "IF-MODIFIED-SINCE” være med. Hvorfor ikke?
         "If-modified-since" Det er ikke lagret noen version i cache som kan brukes til å lastes inn
         i stedet for å laste ned en ny side.
 
-b)
+b) Sjekk serverens respons på din forespørsel. Fikk du tilsendt den filen du spurte
+etter? Hvordan kan du se om du fikk den eller ikke?
+        I den første forespørselen får vi Status code: 200 og Response Phrase: "OK". 
+        Vi kan se at vi fikk tilsendt den filen vi ønsket ved å se at "Line-based text data" 
+        stemmer overens med filen vi får opp i nettleseren.
 
 C) Finn innholdet i den andre "http GET"-foresprøselen. Hvorfor er "IF-MODIFIED-SINCE" med her 
 og ikke i den første forespørselen? Hva er verdien i dette feltet og hva forteller det oss?
