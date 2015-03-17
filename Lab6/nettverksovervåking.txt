@@ -5,3 +5,14 @@ Studentenes navn: Andreas Lømsland, Ole Christian Nerheim, Sidney Camara, Thoma
 Kursnavn: IS 105 Datakommunikasjon og operativsystem
 Dato:17.03.15
 Versjon:1.0
+
+Oppgave 1:
+A) For meg tok det 0,14 sekunder å laste in siden. 
+31	3.630382000	128.119.245.12	10.0.2.15	HTTP	189	HTTP/1.1 200 OK  (text/html)
+22	3.489642000	10.0.2.15	128.119.245.12	HTTP	352	GET / HTTP/1.1
+    Tiden det tok å laste in siden var da 0,14 sekunder. Denne verdien kan brukes til å finne ut hvor rask
+    siden lastes. Om det er unødvendig mye informasjon som trengs å lastes inn, eller om det kanskje foregår
+    noe DDOS på siden. Er det veldig mye aktivitet på siden, som har en for dårlig tjeneste, så må man kanskje
+    oppdatere båndbredden.
+
+B) 
