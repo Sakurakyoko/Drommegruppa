@@ -16,6 +16,8 @@ A) For meg tok det 0,14 sekunder å laste in siden.
     oppdatere båndbredden.
 
 B) 
+15	0.136495000	10.0.2.15	128.119.245.12	HTTP	352	GET / HTTP/1.1 
+
 Request Method: GET
 Request URI: /
 Request Version: HTTP/1.1
@@ -26,3 +28,14 @@ Accept-Language: en-US,en;q=0.5\r\n
 Accept-Encoding: gzip, deflate\r\n
 Connection: keep-alive\r\n
 \r\n
+
+21	0.262330000	128.119.245.12	10.0.2.15	HTTP	201	HTTP/1.1 200 OK  (text/html)
+
+Request Version: HTTP/1.1
+Status Code: 200
+Response Phrase: OK
+Date: Tue, 17 Mar 2015 09:43:56 GMT\r\n
+Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips PHP/5.4.16 mod_perl/2.0.9-dev Perl/v5.16.3\r\n
+Last-Modified: Tue, 30 Oct 2007 17:00:02 GMT\r\n
+ETag: "a5c-43db8bf716880"\r\n
+Accept-Ranges: bytes\r\n
