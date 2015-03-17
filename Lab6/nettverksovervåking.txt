@@ -39,3 +39,14 @@ Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.1e-fips PHP/5.4.16 mod_perl/2.0.9-dev 
 Last-Modified: Tue, 30 Oct 2007 17:00:02 GMT\r\n
 ETag: "a5c-43db8bf716880"\r\n
 Accept-Ranges: bytes\r\n
+
+
+Oppgave 2
+
+a)
+
+b)
+
+c)
+
+d)
