@@ -76,5 +76,6 @@ og ikke i den første forespørselen? Hva er verdien i dette feltet og hva forte
         og en dato som en verdi, og forteller oss når siden/filen sist ble endret. 
 
 d)
-
+Serverens response code på den andre HTTP GET forespørselen er kode 200 som betyr forespørsel godtatt. 
+Filen vi spurte etter ble ikke sendt tilbake pga siden ikke har blitt modifisert og dermed henter den informasjon fra catchen.
 
