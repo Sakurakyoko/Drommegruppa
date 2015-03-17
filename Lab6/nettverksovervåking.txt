@@ -51,6 +51,10 @@ ikke feltet "IF-MODIFIED-SINCE” være med. Hvorfor ikke?
 
 b)
 
-c)
+C) Finn innholdet i den andre "http GET"-foresprøselen. Hvorfor er "IF-MODIFIED-SINCE" med her 
+og ikke i den første forespørselen? Hva er verdien i dette feltet og hva forteller det oss?
+        "IF-MODIFIED-SINCE" er med i den andre GET-forespørselen fordi nettleseren allerede har siden/filen
+        lagret i cachen, noe den ikke hadde ved første forsepørsel. "IF-MODIFIED-SINCE" har et tidspunkt
+        og en dato som en verdi, og forteller oss når siden/filen sist ble endret. 
 
 d)
