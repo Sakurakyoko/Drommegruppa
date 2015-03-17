@@ -43,7 +43,11 @@ Accept-Ranges: bytes\r\n
 
 Oppgave 2
 
-a)
+a) Finn innholdet i den første ”http GET”-forespørselen fra din nettleser. Her skal
+ikke feltet "IF-MODIFIED-SINCE” være med. Hvorfor ikke?
+        Det er første gangen siden blir åpnet, det er derfor ikke noe referansepunkt å bruke til
+        "If-modified-since" Det er ikke lagret noen version i cache som kan brukes til å lastes inn
+        i stedet for å laste ned en ny side.
 
 b)
 
