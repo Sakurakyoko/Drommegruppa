@@ -16,3 +16,13 @@ A) For meg tok det 0,14 sekunder å laste in siden.
     oppdatere båndbredden.
 
 B) 
+Request Method: GET
+Request URI: /
+Request Version: HTTP/1.1
+Host: www-net.cs.umass.edu\r\n
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:33.0) Gecko/20100101 Firefox/33.0\r\n
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\n
+Accept-Language: en-US,en;q=0.5\r\n
+Accept-Encoding: gzip, deflate\r\n
+Connection: keep-alive\r\n
+\r\n
