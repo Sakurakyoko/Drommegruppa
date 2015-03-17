@@ -40,21 +40,17 @@ Last-Modified: Tue, 30 Oct 2007 17:00:02 GMT\r\n
 ETag: "a5c-43db8bf716880"\r\n
 Accept-Ranges: bytes\r\n
 
-
-Oppgave 2
-
-a) Finn innholdet i den første ”http GET”-forespørselen fra din nettleser. Her skal
-ikke feltet "IF-MODIFIED-SINCE” være med. Hvorfor ikke?
-        Det er første gangen siden blir åpnet, det er derfor ikke noe referansepunkt å bruke til
-        "If-modified-since" Det er ikke lagret noen version i cache som kan brukes til å lastes inn
-        i stedet for å laste ned en ny side.
-
-b)
-
-C) Finn innholdet i den andre "http GET"-foresprøselen. Hvorfor er "IF-MODIFIED-SINCE" med her 
-og ikke i den første forespørselen? Hva er verdien i dette feltet og hva forteller det oss?
-        "IF-MODIFIED-SINCE" er med i den andre GET-forespørselen fordi nettleseren allerede har siden/filen
-        lagret i cachen, noe den ikke hadde ved første forsepørsel. "IF-MODIFIED-SINCE" har et tidspunkt
-        og en dato som en verdi, og forteller oss når siden/filen sist ble endret. 
-
-d)
+Request Method: GET, er brukt til å motta informasjon fra serveren ved bruk av URI (Uniform Resource Identifier).
+Request URI: Den identifiserer kilden som det skal sendes en forespørsel til.
+Request Version: Finner versjonen av HTTP som ble brukt for å lage siden.
+Host: Viser adressen du spør om tilgang til.
+User-Agent: Viser klientens operativsystem, nettleser.
+Accept: Viser hvilke "content types" som blir akseptert i forespørselen.
+Accept-Language: Viser til serveren vilke språk som klienten foretrekker.
+Accept-Encoding: Lister de akseptabel koding
+Connection: Viser til hvilken type tilkobling du har, i dette tilfellet er det "Keep-Alive" som betyr at så lenge 
+            klienten fortsetter å forespørre, er tilkoblingen åpen.
+Status Code: Viser til statusen for oppkoblingen, 200 i dette tilfellet, som betyr at forespørselen ble godtatt.
+Response Phrase: Viser det status koden betyr. 200 = OK, 404 = Not Found, 500 = Internal Server Error", osv.
+Server: Viser informasjon om serveren forespørselen blir sendt til.
+Last-Modified
