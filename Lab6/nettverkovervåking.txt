@@ -1,0 +1,7 @@
+Nettverksovervåking med Wireshark Lab06 
+
+
+Studentenes navn: Andreas Lømsland, Ole Christian Nerheim, Sidney Camara, Thomas Farstad Nestaas, Kim Eikebø Lyngvær, Geir Håkon Svendsen og John Tran
+Kursnavn: IS 105 Datakommunikasjon og operativsystem
+Dato:17.03.15
+Versjon:1.0
