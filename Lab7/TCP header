@@ -1,0 +1,13 @@
+TCP Header
+
+1.	Source Port→ Identifisere porten informasjonen blir sendt fra(16bit)
+2.	Destination port→ Identifiserer porten som skal motta informasjonen(16)
+3.	Sequence port→     (32bit)
+4.	Acknownledgement number→     (32bit)
+5.	Offset→     (4bit)
+6.	Reserved→ Reservert for fremtidig bruk(3bit)
+7.	TCP flags(C, E, U, A, P, R, S, F)→      (9bit)(controllbit)
+8.	Window→    (16bit)
+9.	Checksum→ Feltet er brukt feilsøking av TCP header og data(16bit)
+10.	Urgent pointer→     (16bit)
+11.	TCP Options→    (vareierer 0-320bit)
