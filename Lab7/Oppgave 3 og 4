@@ -37,3 +37,19 @@ b) Hvilket element i headeren er det som forteller deg at dette er det andre seg
 ...0 .... .... = Nonce: Not set
 .... 0... .... = Congestion Window Reduced (CWR): Not set
 .... .0.. .... = ECN-Echo: Not set
+.... ..0. .... = Urgent: Not set
+.... ...1 .... = Acknowledgment: Set
+.... .... 0... = Push: Not set
+.... .... .0.. = Reset: Not set
+.... .... ..1. = Syn: Set
+Expert Info (Chat/Sequence): Connection establish acknowledge (SYN+ACK): server port 80
+	Connection establish acknowledge (SYN+ACK): server port 80
+	Severity level: Chat
+Group: Sequence
+.... .... ...0 = Fin: Not set
+
+Dette viser oss at serverene sender en ACK melding tilbake som svar på SYN 
+melding en vår, den sender så sin egen SYN melding tilbake til oss, som den forventer
+et svar på med vår egen ACK melding.
+
+
