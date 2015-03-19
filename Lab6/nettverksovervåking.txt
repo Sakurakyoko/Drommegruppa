@@ -53,7 +53,12 @@ Connection: Viser til hvilken type tilkobling du har, i dette tilfellet er det "
 Status Code: Viser til statusen for oppkoblingen, 200 i dette tilfellet, som betyr at forespørselen ble godtatt.
 Response Phrase: Viser det status koden betyr. 200 = OK, 404 = Not Found, 500 = Internal Server Error", osv.
 Server: Viser informasjon om serveren forespørselen blir sendt til.
-Last-Modified
+Last-Modified: Viser sist siden/serveren ble redigert/endret.
+ETag: Er en kode som blir gitt som cache til klienten, om siden har endret seg siden sist klienten koblet seg opp
+      blir det gitt ut en ny ETag.
+Accept-Ranges: "The Accept-Ranges header differs from the other Accept headers—it is a response header used by servers
+to tell clients whether they accept requests for ranges of a resource. The value of this header tells what type
+of ranges, if any, the server accepts for a given resource."
 
 Oppgave 2
 
