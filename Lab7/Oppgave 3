@@ -1,0 +1,22 @@
+Oppgave 3. 
+a) Hva er Sequence number i TCP SYN-segmentet som blir brukt for å opprette TCP-forbindelsen mellom din maskin og gaia.cs.umass.edu?
+	Sequence number: 0    (relative sequence number)
+
+ b) Hvilket element i headeren er det som forteller deg at dette er det første segmentet i en thre-way-handshake? 
+	.... 0000 0000 0010 = Flags: 0x002 (SYN)
+000. .... .... = Reserved: Not set
+...0 .... .... = Nonce: Not set
+.... 0... .... = Congestion Window Reduced (CWR): Not set
+.... .0.. .... = ECN-Echo: Not set
+.... ..0. .... = Urgent: Not set
+.... ...0 .... = Acknowledgment: Not set
+.... .... 0... = Push: Not set
+.... .... .0.. = Reset: Not set
+.... .... ..1. = Syn: Set
+Expert Info (Chat/Sequence): Connection establish request (SYN): server port 80
+	Connection establish request (SYN): server port 80
+	Severity level: Chat
+Group: Sequence
+.... .... ...0 = Fin: Not set
+
+Her ser vi at den første meldingen sender et SYN signal. Mer info under denne meldingen viser at den prøver å sende en: Connection establish request (SYN).
