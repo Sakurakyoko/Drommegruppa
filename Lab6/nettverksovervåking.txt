@@ -75,7 +75,8 @@ og ikke i den første forespørselen? Hva er verdien i dette feltet og hva forte
         lagret i cachen, noe den ikke hadde ved første forsepørsel. "IF-MODIFIED-SINCE" har et tidspunkt
         og en dato som en verdi, og forteller oss når siden/filen sist ble endret. 
 
-d)
+d) Hva er serverens "response code" i svaret på den andre "HTTP GET" forespørselen?
+Fikk du sendt tilbake den filen du spurte etter nå?
 Serverens response code på den andre HTTP GET forespørselen er kode 200 som betyr forespørsel godtatt. 
 Filen vi spurte etter ble ikke sendt tilbake pga siden ikke har blitt modifisert og dermed henter den informasjon fra catchen.
 
