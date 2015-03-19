@@ -1,0 +1,11 @@
+Spørsmål 1,2 og 5
+
+1. Hva er IP-adressen og TCP-portnummeret som din maskin (source) bruker for å overføre filen til gaia.cs.umass.edu? 
+  Ip adressen til klienten er 10.0.2.15, TCP-porten er 34954
+
+2. Hva er IP-adressen og portnummeret som gaia.cs.umass.edu bruker for å motta filen? 
+  Ip adressen til gaia er 128.119.245.12, TCP-porten er 80
+
+5. Det blir overført 1 byte når 3-way handshake er gjennomført,
+  Alice.txt blir overført ved pakker på 2920 bytes, legger du på denne summen,
+  finner du ut nest Seq-nr. 1+2920 = 2921+2920= 5841 osv..
