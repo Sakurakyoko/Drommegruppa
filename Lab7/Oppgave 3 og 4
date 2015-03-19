@@ -19,4 +19,21 @@ Expert Info (Chat/Sequence): Connection establish request (SYN): server port 80
 Group: Sequence
 .... .... ...0 = Fin: Not set
 
-Her ser vi at den første meldingen sender et SYN signal. Mer info under denne meldingen viser at den prøver å sende en: Connection establish request (SYN).
+Her ser vi at den første meldingen sender et SYN signal. Mer info under denne
+meldingen viser at den prøver å sende en: Connection establish request (SYN).
+
+
+Oppgave 4. 
+a) Hva er Sequence number i SYN ACK-segmentet som er sendt fra gaia.cs.umass.edu til din maskin som svar på SYN? 
+Sequence number: 0    (relative sequence number)
+Acknowledgment number: 1    (relative ack number)
+
+Her ser vi at SYN meldingen blir den første serveren sender ut, mens ack meldingen blir
+et svar på SYN fra første meldingen.
+
+b) Hvilket element i headeren er det som forteller deg at dette er det andre segmentet i en thre-way-handshake?
+.... 0000 0001 0010 = Flags: 0x012 (SYN, ACK)
+000. .... .... = Reserved: Not set
+...0 .... .... = Nonce: Not set
+.... 0... .... = Congestion Window Reduced (CWR): Not set
+.... .0.. .... = ECN-Echo: Not set
