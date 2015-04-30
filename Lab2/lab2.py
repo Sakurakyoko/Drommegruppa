@@ -3,7 +3,8 @@ limit_sum = 4999
 def int_to_roman (integer):
 
     returnstring=''
-    table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
+    table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],
+    ['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
 
     for pair in table:
 
@@ -16,7 +17,8 @@ def int_to_roman (integer):
 
 def rom_to_int(string):
 
-    table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
+    table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],
+    ['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
     returnint=0
     for pair in table:
 
@@ -49,7 +51,8 @@ def rom_or_int():
 rom_or_int()
 # Addition of roman numerals
 def add_roman(x, y):
-    table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
+    table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],
+    ['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
     rom_sum = rom_to_int(x) + rom_to_int(y)
     
     if rom_sum <= limit_sum:
@@ -62,7 +65,8 @@ print add_roman("VI","X")
 
 # Subtraction of roman numerals
 def subtract_roman(x, y):
-    table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
+    table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],
+    ['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
     rom_sum = rom_to_int(x) - rom_to_int(y)
     
     if rom_sum <= limit_sum:
@@ -75,7 +79,8 @@ print subtract_roman("V","IV")
 
 # Multiplication of roman numerals
 def multiply_roman(x, y):
-    table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
+    table=[['M',1000],['CM',900],['D',500],['CD',400],['C',100],['XC',90],['L',50],
+    ['XL',40],['X',10],['IX',9],['V',5],['IV',4],['I',1]]
     rom_sum = rom_to_int(x) * rom_to_int(y)
     
     if rom_sum <= limit_sum:
